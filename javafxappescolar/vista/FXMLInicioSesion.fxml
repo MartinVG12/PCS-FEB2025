@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="375.0" />
+      <AnchorPane layoutX="342.0" prefHeight="400.0" prefWidth="433.0" style="-fx-background-color: #3581c4;">
+         <children>
+            <Label layoutX="159.0" layoutY="14.0" prefHeight="31.0" prefWidth="117.0" text="Bienvenido" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="64.0" text="Ingresa tu usuario y contraseña para iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="114.0" text="Usuario" textFill="WHITE" />
+            <TextField fx:id="tfUsuario" layoutX="158.0" layoutY="109.0" />
+            <Label layoutX="61.0" layoutY="200.0" text="Contraseña" textFill="WHITE" />
+            <PasswordField fx:id="tfPassword" layoutX="158.0" layoutY="195.0" />
+            <Button layoutX="180.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnClickVerificarSesion" text="Ingresar" />
+            <Label fx:id="lbErrorUsuario" layoutX="158.0" layoutY="140.0" textFill="WHITE" />
+            <Label fx:id="lbErrorPassword" layoutX="158.0" layoutY="226.0" textFill="WHITE" />
+         </children></AnchorPane>
+      <ImageView fitHeight="400.0" fitWidth="343.0">
+         <image>
+            <Image url="@../recursos/minimalist-city-sunset-buildings-uhdpaper.com-4K-mobile-8.1390.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
